@@ -102,7 +102,7 @@ h1, h2 {
 }
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0%;
 }
 li {
   display: inline-block;

@@ -32,13 +32,13 @@
 .brand {
   display: inline;
   width: 80px;
- 
+
   float: left;
 }
 
 .navbar {
   background-color: white;
   text-align: right;
-  padding: 15px;
+  padding: 10px;
 }
 </style>

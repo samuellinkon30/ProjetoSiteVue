@@ -1,6 +1,11 @@
 <template>
 
+
+
 	<div class="g">
+
+    <page-header :title="title"/>
+
 		<h5 class="txt1" >Mecanica</h5>
 
 		<h5 class="txt2" >Automação</h5>
@@ -19,13 +24,28 @@
 	</div>
 </template>
 
+<script>
+import PageHeader from './shared-components/PageHeader';
+
+export default {
+    data() {
+      return {
+        title: 'Portfolio',
+      }
+    },
+    components: {
+      PageHeader,
+    },
+}
+</script>
+
 <style >
 
-.g{
+.g h5{
 	color: white;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 30px;
-	
+
 }
 
 
@@ -49,7 +69,7 @@
 		border-radius: 20%;
 		margin-left: 15%;
 		float: left;
-			
+
 }
 
 .ft2{
@@ -70,7 +90,7 @@
 .txt4{
 
 	text-align:left;
-	margin-left: 38%;
+	margin-left: 34%;
 	float: left;
 
 
@@ -78,7 +98,7 @@
 
 
 .ft3{
-	
+
 	width: 350px;
 		border-radius: 20%;
 		margin-left: 15%;
@@ -91,11 +111,11 @@
 		margin-left: 18%;
 		float: left;
 
-	
+
 }
 body {
 	background-image: url("../assets/fundo.jpg");
-	background-size:cover; 
+	background-size:cover;
 	width: 100%;
 }
 h1{
