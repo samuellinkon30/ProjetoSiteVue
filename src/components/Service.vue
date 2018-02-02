@@ -1,125 +1,94 @@
 <template>
-
-
-
-	<div class="g">
-
+  <div class="g">
     <page-header :title="title"/>
-
-		<h5 class="txt1" >Mecanica</h5>
-
-		<h5 class="txt2" >Automação</h5>
-
-		<a href="http://polijuniorengenharia.com.br/servicos/mecanica/"><img class = "ft1" src="../assets/serv1.jpg"></a>
-
-		<a href="http://polijuniorengenharia.com.br/servicos/automacao-e-controle/"><img class = "ft2" src="../assets/serv2.jpg"></a>
-
-		<h5 class="txt3" >Computação</h5>
-
-		<h5 class="txt4" >Civil</h5>
-
-		<a href="http://polijuniorengenharia.com.br/servicos/computacao/"><img class = "ft3" src="../assets/serv3.jpg"></a>
-
-		<a href="http://polijuniorengenharia.com.br/servicos/civil/"><img class = "ft4" src="../assets/serv4.jpg"></a>
-	</div>
+    <h1>Serviços</h1>
+    <h5 class="txt1" >Mecanica</h5>
+    <h5 class="txt2" >Automação</h5>
+    <a href="http://polijuniorengenharia.com.br/servicos/mecanica/"><img class = "ft1" src="../assets/serv1.jpg"></a>
+    <a href="http://polijuniorengenharia.com.br/servicos/automacao-e-controle/"><img class = "ft2" src="../assets/serv2.jpg"></a>
+    <h5 class="txt3" >Computação</h5>
+    <h5 class="txt4" >Civil</h5>
+    <a href="http://polijuniorengenharia.com.br/servicos/computacao/"><img class = "ft3" src="../assets/serv3.jpg"></a>
+    <a href="http://polijuniorengenharia.com.br/servicos/civil/"><img class = "ft4" src="../assets/serv4.jpg"></a>
+  </div>
 </template>
 
 <script>
 import PageHeader from './shared-components/PageHeader';
 
 export default {
-    data() {
-      return {
-        title: 'Portfolio',
-      }
-    },
-    components: {
-      PageHeader,
-    },
-}
+  data() {
+    return {
+      title: 'Poli Junior Engenharias',
+    };
+  },
+  components: {
+    PageHeader,
+  },
+};
 </script>
 
-<style >
-
+<style scoped>
 .g h5{
-	color: white;
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 30px;
-
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
 }
-
-
 .txt1{
-
-	text-align:left;
-	margin-left: 25%;
-	float: left;
-
+  text-align:left;
+  margin-left: 25%;
+  float: left;
 }
 .txt2{
-
-	text-align:left;
-	margin-left: 35%;
-	float: left;
+  text-align:left;
+  margin-left: 35%;
+  float: left;
 }
-
 .ft1{
-
-	width: 350px;
-		border-radius: 20%;
-		margin-left: 15%;
-		float: left;
-
+  width: 350px;
+  border-radius: 20%;
+  margin-left: 15%;
+  float: left;
 }
-
 .ft2{
-	width: 350px;
-		border-radius: 20%;
-		margin-left: 18%;
-		float: left;
+  width: 350px;
+  border-radius: 20%;
+  margin-left: 18%;
+  float: left;
 }
-
 .txt3{
 
-	text-align:left;
-	margin-left: 23%;
-	float: left;
-
-
+  text-align:left;
+  margin-left: 23%;
+  float: left;
 }
 .txt4{
 
-	text-align:left;
-	margin-left: 34%;
-	float: left;
-
-
+  text-align:left;
+  margin-left: 34%;
+  float: left;
 }
-
-
 .ft3{
-
-	width: 350px;
-		border-radius: 20%;
-		margin-left: 15%;
-		float: left;
-
+  width: 350px;
+  border-radius: 20%;
+  margin-left: 15%;
+  float: left;
+   margin-bottom: 5%;
 }
 .ft4{
-	width: 350px;
-		border-radius: 20%;
-		margin-left: 18%;
-		float: left;
-
-
+  width: 350px;
+  border-radius: 20%;
+  margin-left: 18%;
+  float: left;
+  margin-bottom: 5%;
 }
 body {
-	background-image: url("../assets/fundo.jpg");
-	background-size:cover;
-	width: 100%;
+  background-image: url("../assets/fundo.jpg");
+  background-size:cover;
+  width: 100%;
 }
 h1{
-	color: white;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+color: #e89f00;
+  font-family: 'Oswald', sans-serif;
 }
 </style>

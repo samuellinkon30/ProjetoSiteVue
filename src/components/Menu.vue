@@ -19,7 +19,6 @@
   margin: 0px;
   font-family: "Times New Roman", Times, serif;
 }
-
 .menu li a {
   text-decoration:none;
   color: black;
@@ -28,14 +27,12 @@
   padding-right: 20px;
   padding-left: 20px;
 }
-
 .brand {
   display: inline;
   width: 80px;
 
   float: left;
 }
-
 .navbar {
   background-color: white;
   text-align: right;
