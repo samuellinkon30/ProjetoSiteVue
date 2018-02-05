@@ -17,14 +17,24 @@ export default {
 
 <style scoped>
 * { margin: 0%; }
-.header {
 
+.header {
+  size: relative;
   background-color: #e89f00;
   padding: 10;
 }
+
 .header h1 {
   font-size: 2em;
   color: white;
   font-family: 'Oswald', sans-serif;
 }
-  </style>
+
+@media screen and (max-width: 320px){
+  .header h1 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+}
+</style>

@@ -2,15 +2,30 @@
   <div class="g">
     <page-header :title="title"/>
     <h1>Serviços</h1>
-    <h5 class="txt1" >Mecanica</h5>
-    <h5 class="txt2" >Automação</h5>
-    <a href="http://polijuniorengenharia.com.br/servicos/mecanica/"><img class = "ft1" src="../assets/serv1.jpg"></a>
-    <a href="http://polijuniorengenharia.com.br/servicos/automacao-e-controle/"><img class = "ft2" src="../assets/serv2.jpg"></a>
-    <h5 class="txt3" >Computação</h5>
-    <h5 class="txt4" >Civil</h5>
-    <a href="http://polijuniorengenharia.com.br/servicos/computacao/"><img class = "ft3" src="../assets/serv3.jpg"></a>
-    <a href="http://polijuniorengenharia.com.br/servicos/civil/"><img class = "ft4" src="../assets/serv4.jpg"></a>
+
+    <div class="servico">
+
+      <h5 class="servico-title">Serviço 1</h5>
+      <a href="#"><img class = "ft" src="../assets/serv1.jpg"></a>
+    </div>
+
+    <div class="servico">
+      <h5 class="servico-title" >Servico 2</h5>
+      <a href="#"><img class = "ft" src="../assets/serv2.jpg"></a>
+    </div>
+
+    <div class="servico">
+      <h5 class="servico-title">Serviço 3</h5>
+      <a href="#"><img class = "ft" src="../assets/serv3.jpg"></a>
+    </div>
+
+     <div class="servico">
+      <h5 class="servico-title">Serviço 4</h5>
+      <a href="#"><img class = "ft" src="../assets/serv4.jpg"></a>
+    </div>
+
   </div>
+
 </template>
 
 <script>
@@ -19,7 +34,7 @@ import PageHeader from './shared-components/PageHeader';
 export default {
   data() {
     return {
-      title: 'Poli Junior Engenharias',
+      title: 'Sua Empresa',
     };
   },
   components: {
@@ -29,66 +44,54 @@ export default {
 </script>
 
 <style scoped>
-.g h5{
-  color: white;
+.g h1
+{
+  color: black;
+  padding: 1%;
+  font-size: 35px;
   font-family: 'Oswald', sans-serif;
-  font-size: 30px;
 }
-.txt1{
-  text-align:left;
-  margin-left: 25%;
-  float: left;
+.servico{
+  padding: 10px;
+  margin: 10px;
+  float:left;
+  margin-left: 6%;
+  width: 40%;
 }
-.txt2{
-  text-align:left;
-  margin-left: 35%;
-  float: left;
-}
-.ft1{
-  width: 350px;
-  border-radius: 20%;
-  margin-left: 15%;
-  float: left;
-}
-.ft2{
-  width: 350px;
-  border-radius: 20%;
-  margin-left: 18%;
-  float: left;
-}
-.txt3{
-
-  text-align:left;
-  margin-left: 23%;
-  float: left;
-}
-.txt4{
-
-  text-align:left;
-  margin-left: 34%;
-  float: left;
-}
-.ft3{
-  width: 350px;
-  border-radius: 20%;
-  margin-left: 15%;
-  float: left;
-   margin-bottom: 5%;
-}
-.ft4{
-  width: 350px;
-  border-radius: 20%;
-  margin-left: 18%;
-  float: left;
-  margin-bottom: 5%;
-}
-body {
-  background-image: url("../assets/fundo.jpg");
-  background-size:cover;
+.ft
+{
   width: 100%;
+  float: left;
+  border-radius: 20%;
 }
-h1{
-color: #e89f00;
+
+.servico h5{
+  color: #e89f00;
+  font-size: 25px;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
+  padding-bottom: 3%;
 }
+
+@media screen and (max-width: 320px){
+
+.servico{
+  width: 80%;
+  margin-left: 10%;
+}
+.ft
+{
+  width: 100%;
+margin-left: 0;
+  border-radius: 20%;
+}
+
+.servico h5{
+  color: #e89f00;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 3%;
+}
+}
+
 </style>

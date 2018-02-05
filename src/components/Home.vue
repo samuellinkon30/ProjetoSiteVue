@@ -2,7 +2,8 @@
 
 <div>
   <page-header :title="title"/>
-  <h1>Projetos de Engenharias com o melhor custo benefício</h1>
+  <div class="ft"><h1>Descrição sua Empresa</h1></div>
+
 </div>
 </template>
 
@@ -12,7 +13,7 @@ import PageHeader from './shared-components/PageHeader';
 export default {
   data() {
     return {
-      title: 'Poli Junior Engenharias',
+      title: 'Sua Empresa',
     };
   },
   components: {
@@ -23,13 +24,30 @@ export default {
 
 <style >
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-body {
+
+.ft {
 background-image: url("../assets/fundo.jpg");
 background-size:cover;
-width: 100%;
+padding-bottom: 85vh;
 }
 h1{
+margin-top: 0%;
 color:#e89f00;
 font-family:'Oswald', sans-serif;
 }
+
+@media screen and (min-width: 320px)
+{
+  h1{
+  color: #e89f00;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  }
+  .ft {
+  background-image: url("../assets/fundo.jpg");
+    background-size:cover;
+padding-bottom: 80vh;
+}
+ }
 </style>
+
