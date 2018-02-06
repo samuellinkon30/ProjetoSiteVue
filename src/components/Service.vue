@@ -1,7 +1,8 @@
 <template>
   <div class="g">
     <page-header :title="title"/>
-    <h1>Serviços</h1>
+
+    <h1 >Serviços</h1>
 
     <div class="servico">
 
@@ -44,9 +45,14 @@ export default {
 </script>
 
 <style scoped>
+.g{
+  background-image: url("../assets/fundo.jpg");
+  background-size:cover;
+  padding-bottom: 180vh;
+}
 .g h1
 {
-  color: black;
+  color: #e89f00;
   padding: 1%;
   font-size: 35px;
   font-family: 'Oswald', sans-serif;
@@ -91,6 +97,11 @@ margin-left: 0;
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
   padding-bottom: 3%;
+}
+.g{
+  background-image: url("../assets/fundo.jpg");
+  background-size:cover;
+  padding-bottom: 180vh;
 }
 }
 

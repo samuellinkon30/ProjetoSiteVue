@@ -10,7 +10,7 @@
     <b-navbar-nav>
       <b-nav-item href="Home">Home</b-nav-item>
       <b-nav-item href="About">About</b-nav-item>
-      <b-nav-item href="Service">Service</b-nav-item>
+      <b-nav-item href="Service">Services</b-nav-item>
       <b-nav-item href="Find">Find Us</b-nav-item>
     </b-navbar-nav>
   </b-collapse>

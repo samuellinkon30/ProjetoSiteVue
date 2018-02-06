@@ -2,7 +2,7 @@
 
 <div>
   <page-header :title="title"/>
-  <div class="ft"><h1>Descrição sua Empresa</h1></div>
+  <div class="titulo"><h1>Descrição da sua Empresa</h1></div>
 
 </div>
 </template>
@@ -25,12 +25,12 @@ export default {
 <style >
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-.ft {
+.titulo {
 background-image: url("../assets/fundo.jpg");
 background-size:cover;
 padding-bottom: 85vh;
 }
-h1{
+.titulo h1{
 margin-top: 0%;
 color:#e89f00;
 font-family:'Oswald', sans-serif;
@@ -38,15 +38,16 @@ font-family:'Oswald', sans-serif;
 
 @media screen and (min-width: 320px)
 {
-  h1{
+  .titulo h1{
   color: #e89f00;
+  padding-top: 10%;
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
   }
-  .ft {
+  .titulo {
   background-image: url("../assets/fundo.jpg");
-    background-size:cover;
-padding-bottom: 80vh;
+  background-size:cover;
+  padding-bottom: 80vh;
 }
  }
 </style>

@@ -1,15 +1,20 @@
 <template>
     <div class="geral">
+
        <page-header :title="title"/>
-       <div class ="ft">
+
+       <div class ="texto">
+
          <h1>Sobre sua Empresa</h1>
+
         <div class="about">
             <p class="txt1">
                 {{ texto1 }}
             </p>
-            <p class="txt2">
+            <p class="txt1">
                 {{ texto2 }}
             </p>
+
         </div>
        </div>
 
@@ -30,60 +35,74 @@ export default {
   components: {
     PageHeader,
   },
+  methods:{
+    getAboutInfo(){
+      axios.get('localhost:3030/about').then(res => {
+          console.log(res);
+      }).catch( err=> { console.log(err); });
+    },
+  },
+  beforeCreated() {
+    this.getAboutInfo();
+  },
 };
 </script>
 
+
 <style>
-.ft {
+
+.geral {
  background-image: url("../assets/fundo.jpg");
  background-size:cover;
- padding-bottom: 85vh;
+ padding-bottom: 43vh;
 }
 
-.txt2{
-   color: white;
- text-align: center;
-}
 .txt1{
-   color: white;
- text-align: center;
+  background-color: black;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
-.about{
- margin-top: 3%;
- padding-right: 1%;
- font-family: "Comic Sans MS", cursive, sans-serif;
-}
-h1{
+
+.texto h1{
   color: #e89f00;
+  padding: 3%;
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
 }
 
 @media screen and (max-width: 320px)
 {
-  .ft {
+.geral {
  background-image: url("../assets/fundo.jpg");
  background-size:cover;
+ padding-bottom: 7vh;
 }
-  .txt2{
- color: white;
- text-align: left;
-}
+
 .txt1{
-   color: white;
- text-align: left;
+  background-color: black;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
-.about{
- margin-left: 5%;
- margin-top: 3%;
- width: 95%;
- font-size: 15px;
- font-family: "Comic Sans MS", cursive, sans-serif;
-}
-.ft {
- background-image: url("../assets/fundo.jpg");
- background-size:cover;
- padding-bottom: 8vh;
+
+.texto h1{
+  color: #e89f00;
+  padding: 5%;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
 }
  }
 </style>
